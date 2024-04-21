@@ -119,7 +119,7 @@ print(cities)# inserted Toronto at the beginning of the list
 
 #Esercizio 6-1
 person: dict={"first_name":"Marco","last_name":"Latorre","age":30,"city":"Torino"}
-print(person)
+print(person["first_name"],person["last_name"],person["age"],person["city"])
 #I created a dictionary and printed each information in it
 
 #Esercizio 6-2
