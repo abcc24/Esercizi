@@ -131,7 +131,12 @@ print(fav_numbers["Davide")
 #I created a dictionary and printed all the informations
 
 #Esercizio 6-3
-glossary: dict={"sort":"give an alphabetical order","append":"add an element at the end of the list"}
+glossary: dict={"sort":"give an alphabetical order",
+                "append":"add an element at the end of the list",
+                "pop":"remove an element from the list",
+                "clear":"clear the elements of a list",
+                "delete":"delete a list"
+               }
 for k, v in glossary.items():
     print(f"{k}: {v}")
 #Like in the last exercise i printed the information of the dictionary in a separate way
