@@ -168,8 +168,11 @@ for k, v in favorite_places.items():
 
 #Esercizio 6-10
 fav_numbers: dict={"Riccardo":3,"Laura":21,"Irene":7,"Davide":100}
-for k, v in fav_numbers.items():
-    print(f"{k}: {v}")
+fav_numbers["Riccardo"]=3, 10
+fav_numbers["Laura"]=21, 5
+fav_numbers["Irene"]=7, 50
+fav_numbers["Davide"]=100, 30
+print(fav_numbers)
 #I used a cicle 'for' on a dictionary to print the informations separately
 
 #Esercizio 6-11
