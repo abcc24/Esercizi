@@ -138,7 +138,7 @@ glossary: dict={"sort":"give an alphabetical order",
                 "delete":"delete a list"
                }
 for k, v in glossary.items():
-    print(f"{k}: {v}")
+    print(f"{k}\n{v}")
 #Like in the last exercise i printed the information of the dictionary in a separate way
 
 #Esercizio 6-7
