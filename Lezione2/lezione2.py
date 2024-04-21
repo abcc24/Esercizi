@@ -124,7 +124,10 @@ print(person["first_name"],person["last_name"],person["age"],person["city"])
 
 #Esercizio 6-2
 fav_numbers: dict={"Riccardo":3,"Laura":21,"Irene":7,"Davide":100}
-print(fav_numbers)
+print(fav_numbers["Riccardo"])
+print(fav_numbers["Laura"])
+print(fav_numbers["Irene"])
+print(fav_numbers["Davide")
 #I created a dictionary and printed all the informations
 
 #Esercizio 6-3
