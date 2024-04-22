@@ -194,3 +194,4 @@ fav_numbers["Laura"]=30
 print(fav_numbers)
 #I used the dictionary of exercise 6-2
 #First I added Antonio to the dictionary, then I removed Riccardo and I changed the values of Laura
+##########
