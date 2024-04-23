@@ -1,5 +1,3 @@
-@ -4,45 +4,182 @@
-
 # Esercizio 2-3
 x: str="Eric"
 
