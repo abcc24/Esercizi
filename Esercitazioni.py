@@ -29,3 +29,22 @@ def aggrega_voti(voti: dict) -> dict[str:list[int]]:
             risultato[name] = [voto]
     return risultato
 print(aggrega_voti ([{'name': 'Mario', 'voto': 7}, {'name': 'Sara', 'voto': 8}, {'name': 'Mario', 'voto': 6}]))
+
+
+###
+
+#Scrivi una funzione che ruota di una lista verso sinistra di un numero specificato di k posizioni
+#La rotazione verso sinistra significa che ciascun elemrnto viene spostato a sinistra di una posizione e
+#l'elemento iniziale viene spostato alla fine della lista. Per la rotazione utilizzare lo slicing
+#e gestire il caso in cui il numero specifico di posizioni sia maggiore della lunghezza della lista
+
+def rotate_left(elements: list[int], k: int):
+    n: int = len(elements)
+    rotated: list[int] = []
+    if k > n:
+        k = k % n
+    rotated = elements[k:] + elements[:k]
+
+    return rotated
+
+print(rotate_left([1,2,3,4,5], 2))
