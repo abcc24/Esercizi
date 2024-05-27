@@ -4,41 +4,53 @@ print ("'BANG !!!!! AND THEY'RE OFF !!!!!'")
 
 percorso = []
 
-#\#1
+t = 0
+l = 0
+
+def tortoise_step(step_tort):
+
+    dado = random.randint(1,10)
+    if dado == 0 < 6:
+        step_tort += 3
+    if dado == 5 < 8:
+        step_tort -= 6
+    if dado == 7 < 11:
+        step_tort += 1
+    return step_tort
+
+def hare_step(step_hare):
+
+    dado = random.randint(1,10)
+    if dado == 0 < 3:
+        step_hare += 0
+    if dado == 2 < 5:
+        step_hare += 9
+    if dado == 5:
+        step_hare -= 12
+    if dado == 5 < 8:
+        step_hare += 1
+    if dado == 7 < 11:
+        step_hare -= 2
+    return step_hare
 
 
-tartaruga = "T"
-lepre = "H"
+def vis_percorso (percorso):
 
-for x in range(1,71):
-    percorso.append('_')
-    if tartaruga not in percorso:
-        percorso.insert(0,tartaruga)
-    if lepre not in percorso:
-        percorso.insert(0,lepre)
-print(percorso)
+    hares = hare_step(step_hare=0)
+    torts = tortoise_step(step_tort=0) #utilizza questo metodo per richiamare funzione precedente
 
-def tortoise_step():
+    for x in range(1,71):
+        percorso.append('_')
+    
+    for y in range(len(percorso)): #inizializza la T e la H utilizzando la posizione nel percorso
+        percorso[t] = "T"
+        percorso[l] = "H"
+        
+        print(percorso)
 
-    for x in random.randint(range(1,11)):
-        if x == [1,2,3,4,5]:
-            return 3
-        if x == [6,7]:
-            return -6
-        if x == [8,9,10]:
-            return 1
+    if percorso[t] == percorso[l]:
+        print ("OUCH") #se si printa nella stessa posizione inizializzata [0], la T diventa invisibile
 
-def hare_step():
+    #while
 
-    for x in random.randint(range(1,11)):
-        if x == [1,2]:
-            return 0
-        if x == [3,4]:
-            return 9
-        if x == 5:
-            return -12
-        if x == [6,7,8]:
-            return 1
-        if x == [9,10]:
-            return -2
-
+vis_percorso(percorso)
