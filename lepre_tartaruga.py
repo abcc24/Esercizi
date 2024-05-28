@@ -7,37 +7,35 @@ percorso = []
 t = 0
 l = 0
 
-def tortoise_step(step_tort):
+def tortoise_step():
 
     dado = random.randint(1,10)
     if dado == 0 < 6:
-        step_tort += 3
+        return 3
     if dado == 5 < 8:
-        step_tort -= 6
+        return -6
     if dado == 7 < 11:
-        step_tort += 1
-    return step_tort
+        return 1
 
-def hare_step(step_hare):
+def hare_step():
 
     dado = random.randint(1,10)
     if dado == 0 < 3:
-        step_hare += 0
+        return 0
     if dado == 2 < 5:
-        step_hare += 9
+        return 9
     if dado == 5:
-        step_hare -= 12
+        return -12
     if dado == 5 < 8:
-        step_hare += 1
+        return 1
     if dado == 7 < 11:
-        step_hare -= 2
-    return step_hare
+        return -2
 
 
 def vis_percorso (percorso):
 
-    hares = hare_step(step_hare=0)
-    torts = tortoise_step(step_tort=0) #utilizza questo metodo per richiamare funzione precedente
+    hares = hare_step()
+    torts = tortoise_step() #utilizza questo metodo per richiamare funzione precedente
 
     for x in range(1,71):
         percorso.append('_')
@@ -45,12 +43,19 @@ def vis_percorso (percorso):
     for y in range(len(percorso)): #inizializza la T e la H utilizzando la posizione nel percorso
         percorso[t] = "T"
         percorso[l] = "H"
-        
-        print(percorso)
+
+
+    while True:
+        if t and l < percorso[70]:
+            percorso[l] += hares
+            percorso[t] += torts
+        if t or l == percorso[70]:
+            break
+        return percorso[t] and percorso[l]
 
     if percorso[t] == percorso[l]:
         print ("OUCH") #se si printa nella stessa posizione inizializzata [0], la T diventa invisibile
 
-    #while
+
 
 vis_percorso(percorso)
