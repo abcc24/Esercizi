@@ -35,7 +35,7 @@ veicolo.descrivi_veicolo()
 auto.descrivi_veicolo()"""
 
 
-class Specie:
+"""class Specie:
 
     def __init__(self, nome, popolazione_iniziale, tasso_di_crescita):
         self.nome = nome
@@ -46,5 +46,4 @@ class Specie:
         popolazione_nuova = self.popolazione_iniziale * (1 + (self.popolazione_iniziale/100))
         print (f"La nuova popolazione è {popolazione_nuova}")
     
-    def anni_per_superare(self, altra_specie: "Specie"):
-        
+    def anni_per_superare(self, altra_specie: "Specie"):"""
