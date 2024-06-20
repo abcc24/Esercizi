@@ -5,7 +5,7 @@ class Fattura():
 
     def __init__(self, patient: list[Paziente], doctor: Dottore):
         
-        self.patient = patient
+        self.list_patient = patient
         self.doctor = doctor
 
 
@@ -23,3 +23,25 @@ class Fattura():
         self.salary = salary
         
     def getSalary(self):
+
+        self.salary = self.doctor.getParcel() * len(self.list_patient)
+        return self.salary
+
+    def getFatture (self):
+        self.fatture = len(self.list_patient)
+        return self.fatture
+
+    def addPatient (self, newPatient):
+        self.newPatient = newPatient
+        if newPatient not in self.list_patient:
+            self.list_patient.append(newPatient)
+        for newPatient in self.list_patient:
+            if newPatient in self.list_patient:
+                print (f"Alla lista del dottor {self.doctor.setLastName()}, è stato aggiunto il paziente {newPatient.getidCode()}")
+
+    def removePatient (self,idCode):
+        for patient in self.list_patient:
+            if patient.getidCode() == idCode:
+                self.list_patient.remove(patient)
+        print (f"Alla lista del dottor {self.doctor.getLastName} è stato rimosso il paziente {patient.getidCode}")
+

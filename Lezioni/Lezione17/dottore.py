@@ -52,3 +52,5 @@ dottore1: Dottore = Dottore(first_name="Mimmo", last_name="Mammo", specializatio
 dottore1.setAge(31)
 dottore1.isAvalidDoctor()
 dottore1.doctorGreet()
+dottore1.setParcel(1500.00)
+dottore1.getParcel()
