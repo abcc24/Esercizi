@@ -1,4 +1,22 @@
 #Alberto Baccaro#
+import time
+import random
+
+def get_time(func):
+
+    def wrapper(*args):
+
+        start = time.time()
+
+        func(*args)
+
+        end = time.time()
+        enlapsed_time = end - start
+        print(f"{enlapsed_time=}")
+    
+    return wrapper
+
+
 
 class Zoo:
     def __init__(self, fences, zoo_keepers):
