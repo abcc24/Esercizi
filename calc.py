@@ -1,4 +1,4 @@
-#CLASSI ASTRATTE
+#CLASSI ASTRATTE!
 
 from abc import ABC, abstractmethod
 

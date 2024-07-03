@@ -18,7 +18,7 @@ print(blackjack([1,10,11]))
 #il tuo compito ora è progettare una pagina Web rettangolare, la cui lunghezza L e larghezza W soddisfino i seguenti requisiti:
 #1. L'area della pagina web rettangolare che hai progettato deve essere uguale all'area di destinazione specificata.
 #2. La larghezza W non deve essere maggiore della lunghezza L, il che significa L >= W.
-#3. La differenza tra la lunghezza L e la larghezza W dovrebbe essere la minima possibile.
+#3. La differenza tra la lunghezza L e la larghezza W dovrebbe essere la minima possibile!
 
 #Restituisce una lista [L, W] dove L e W sono la lunghezza e la larghezza della pagina web che hai progettato in sequenza.
 

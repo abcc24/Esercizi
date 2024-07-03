@@ -3,6 +3,7 @@ class Film:
     def __init__(self, titolo: str, durata: int):
         self.titolo = titolo
         self.durata = durata
+        ###
     
 class Sala:
 

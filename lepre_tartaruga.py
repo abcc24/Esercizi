@@ -1,6 +1,6 @@
 import random
 
-print ("'BANG !!!!! AND THEY'RE OFF !!!!!'")
+print ("'BANG !!!!! AND THEY'RE OFF !!!!!!'")
 
 percorso = []
 

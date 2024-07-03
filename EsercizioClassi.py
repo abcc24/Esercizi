@@ -13,7 +13,7 @@ Metodi:
 - sub1(): Decrementa il conteggio di 1, ma non permette che il conteggio diventi negativo.
   Se il conteggio è già 0, stampa un messaggio di errore.
 - get(): Restituisce il valore corrente del conteggio.
-- mostra(): Stampa a schermo il valore corrente del conteggio.
+- mostra(): Stampa a schermo il valore corrente del conteggio!
 """
 
 class Contatore:
